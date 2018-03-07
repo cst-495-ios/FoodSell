@@ -61,3 +61,17 @@
 	-   (optional) which days/hours item is available (in case of a daily soup or similar)
     
 -   User can also edit menu items if necessary
+
+----------
+
+
+## Wire Frames
+
+**Customer**
+![Main Screen](https://i.imgur.com/NM2oW17.png)
+
+![Initial Screen before Signup](https://i.imgur.com/g2XL3l2.png)
+
+![Signup Screen](https://i.imgur.com/IjRBTN2.png)
+
+![Login Screen](https://i.imgur.com/ePxuX7A.png)
