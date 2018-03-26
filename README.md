@@ -2,7 +2,7 @@
 
 ## **Description:**
 
-\- Local businesses don’t have the money to build their own application, they usually go around this by having customers call them for orders. But that may interrupt whatever they’re doing at the time. So our app should allow any restaurant business to upload their menu under their restaurant name, whether or not they’re able to deliver (if not, the app will be able to notify a user when the food is ready for pickup). Customers will be able to search for a restaurant by name or city, order their food and pay for it through credit card/paypal. If they make an account, they can favorite a restaurant, save their credit info and their personal name.
+Local businesses don’t have the money to build their own application, they usually go around this by having customers call them for orders. But that may interrupt whatever they’re doing at the time. So our app should allow any restaurant business to upload their menu under their restaurant name, whether or not they’re able to deliver (if not, the app will be able to notify a user when the food is ready for pickup). Customers will be able to search for a restaurant by name or city, order their food and pay for it through credit card/paypal. If they make an account, they can favorite a restaurant, save their credit info and their personal name.
 
 ## **User Stories:**
 
