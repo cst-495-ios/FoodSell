@@ -118,6 +118,30 @@
 		- item_name,
 		- description,
 		- price
+		
+		
+---------
+
+
+**Considerations*
+
+- What is your product pitch?
+Most businesses have customers call to put down orders, but this could make things difficult for employees that cannot do everything at the same time. Our solution should allow any restaurant business to upload their menu under their restaurant name, and provide convenience for both the business and customer to put down orders.
+Who are the key stakeholders for this app?
+Businesses, customers, and normal curious users. They will be using this app to search for business/restaurants, look at the menus, and put down orders that they can either pick up or get delivered (if delivery is available).
+
+- What are the core flows?
+Key functions will be browsing businesses/restaurants and putting down an order for pick up.Screens that each user will see is the main launch screen, a screen where a business or customer can login. Unregistered users will be still be able to continue as guests to browse and view menus.
+
+
+- What will your final demo look like?
+On our final demo, a brand new user will first see the launch screen which will then lead to the screen that prompts them to login if they have an account. If the user does not have an account, they can still continue using the app to browse and view businesses, restaurants, and their menus. Both guests and registered customers will be able to make an order, pick an available date/time to pick up the order, and will receive a notification when the food is ready for pickup.
+
+- What mobile features do you leverage?
+The restaurant/business will have an address featured on their page, and we plan to provide an external link that allows the user to use any map application for directions to the address of the business/restaurant. The second feature is notifications. We want to notify the user when their food is ready for pick up.
+What are your technical concerns?
+One of the technical concerns we have is the database. We may face issues with having the application and server function well together.
+
 	
 	
 	
