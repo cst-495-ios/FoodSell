@@ -76,3 +76,51 @@
 ![Signup Screen](https://i.imgur.com/IjRBTN2.png)
 
 ![Login Screen](https://i.imgur.com/ePxuX7A.png)
+
+
+----------
+
+## Feautures
+
+- Required:
+	
+	- Splash page with App logo.
+	- MenuViewController with option to login or signup or continue as a guest.
+	- SearchViewController which user can perform a search for a business or by location.
+	- ProfileBusinessViewController allows businesses to edit/add information and edit/create a menu.
+	- ProfileCustomerViewController allows users to edit/add personal information and edit/add billing information.
+	- CheckoutViewController allows users to perform a checkout operation by selecting a menu item from a businesses menu and 		choosing delivery method.
+
+
+- Optionals:
+	- Businesses can add a map view to their profile for easy location access.
+	
+	
+
+----------
+
+
+## Model Classes
+	- Customer:
+		- name,
+		- address,
+		- card_info
+	
+	- Business:
+		- name,
+		- location,
+		- menu
+		
+	- Menu:
+		- menuItems
+		
+	- MenuItem:
+		- item_name,
+		- description,
+		- price
+	
+	
+	
+
+
+	
