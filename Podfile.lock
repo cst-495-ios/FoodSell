@@ -1,20 +1,20 @@
 PODS:
   - Bolts/Tasks (1.9.0)
+  - DLRadioButton (1.4.11)
   - Parse (1.16.0):
     - Parse/Core (= 1.16.0)
   - Parse/Core (1.16.0):
     - Bolts/Tasks (~> 1.9)
-  - RadioButton (1.0)
 
 DEPENDENCIES:
+  - DLRadioButton
   - Parse
-  - RadioButton
 
 SPEC CHECKSUMS:
   Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
+  DLRadioButton: 0d04b8259e7bfd886571a1e9173c73fee7118f50
   Parse: 5b36dc2c2f0a2fd82a257ae018bc3d68cf2c24e7
-  RadioButton: 7ef053baf6ff0e7f9e777016c28e9ba4e330edba
 
-PODFILE CHECKSUM: db94ed87d1e465a6eac9b68b56d4761c75944a62
+PODFILE CHECKSUM: f0bec002ac2caadadaad0911e70fea9a55340ebb
 
 COCOAPODS: 1.4.0

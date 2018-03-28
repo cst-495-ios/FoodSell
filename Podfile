@@ -7,7 +7,7 @@ target 'FoodSell' do
 
   # Pods for FoodSell
   pod 'Parse’
-  pod ‘RadioButton’
+  pod ‘DLRadioButton’
   target 'FoodSellTests' do
     inherit! :search_paths
     # Pods for testing

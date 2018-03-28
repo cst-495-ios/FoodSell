@@ -7,19 +7,19 @@
 //
 
 import UIKit
-import RadioButton
+
+import DLRadioButton
 
 class OptionsSignupViewController: UIViewController {
 
     
-    @IBOutlet weak var opt_business: RadioButton!
-    
-    @IBOutlet weak var opt_customer: RadioButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
+        
+        
         
     }
 
@@ -31,6 +31,10 @@ class OptionsSignupViewController: UIViewController {
     @IBAction func onContinue(_ sender: Any) {
     }
     
+    @IBAction func businessSelected(_ sender: Any) {
+    }
     
-
+    @IBAction func customerSelected(_ sender: Any) {
+    }
+    
 }

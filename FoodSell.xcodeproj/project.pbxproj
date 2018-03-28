@@ -103,12 +103,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		175598F8206C432D00DC1EB0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		175598F9206C433400DC1EB0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		175682A920699D86005D2292 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				175682AE2069A344005D2292 /* SignupViewController.swift */,
 				175682AA20699DA3005D2292 /* MenuViewController.swift */,
 				175682AC2069A335005D2292 /* LoginViewController.swift */,
-				175682AE2069A344005D2292 /* SignupViewController.swift */,
 				175682B02069A37D005D2292 /* SearchViewController.swift */,
 				175682B22069A668005D2292 /* OptionsSignupViewController.swift */,
 				173B9EF2206B28F300CE8054 /* GuestSearchViewController.swift */,
@@ -143,6 +157,8 @@
 		17A45EF52047615A00AF4590 /* FoodSell */ = {
 			isa = PBXGroup;
 			children = (
+				175598F9206C433400DC1EB0 /* Models */,
+				175598F8206C432D00DC1EB0 /* Views */,
 				1774A4002069AF0F00DA90AD /* Main.storyboard */,
 				175682A920699D86005D2292 /* View Controllers */,
 				17A45EF62047615A00AF4590 /* AppDelegate.swift */,
@@ -392,14 +408,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-FoodSell/Pods-FoodSell-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/DLRadioButton/DLRadioButton.framework",
 				"${BUILT_PRODUCTS_DIR}/Parse/Parse.framework",
-				"${BUILT_PRODUCTS_DIR}/RadioButton/RadioButton.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DLRadioButton.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Parse.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RadioButton.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
