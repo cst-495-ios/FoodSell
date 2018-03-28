@@ -10,10 +10,15 @@ import Parse
 
 class Account: PFObject, PFSubclassing{
     
+    @NSManaged var key: String
+    @NSManaged var type: Int
+    @NSManaged var cards: [[String:Any]]
+    @NSManaged var billing_info: [String:Any]
     
     static func parseClassName()->String{
         return "Account"
     }
+    
     
     
 }
