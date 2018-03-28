@@ -27,11 +27,15 @@ class OptionsSignupViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    @IBAction func goBack(_ sender: Any) {
+        self.performSegue(withIdentifier: "goToMenu", sender: nil)
+    }
     
     @IBAction func onContinue(_ sender: Any) {
     }
     
     @IBAction func businessSelected(_ sender: Any) {
+        
     }
     
     @IBAction func customerSelected(_ sender: Any) {
