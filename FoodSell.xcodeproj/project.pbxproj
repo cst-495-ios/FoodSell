@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		16A9D76AEFD9B432CB6A5210 /* Pods_FoodSell.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A074494B94ED07C1B14EFD1A /* Pods_FoodSell.framework */; };
 		173B9EF3206B28F300CE8054 /* GuestSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173B9EF2206B28F300CE8054 /* GuestSearchViewController.swift */; };
+		175598FB206C494000DC1EB0 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175598FA206C494000DC1EB0 /* Account.swift */; };
 		175682AB20699DA3005D2292 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175682AA20699DA3005D2292 /* MenuViewController.swift */; };
 		175682AD2069A335005D2292 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175682AC2069A335005D2292 /* LoginViewController.swift */; };
 		175682AF2069A344005D2292 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175682AE2069A344005D2292 /* SignupViewController.swift */; };
@@ -45,6 +46,7 @@
 
 /* Begin PBXFileReference section */
 		173B9EF2206B28F300CE8054 /* GuestSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestSearchViewController.swift; sourceTree = "<group>"; };
+		175598FA206C494000DC1EB0 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		175682AA20699DA3005D2292 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		175682AC2069A335005D2292 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		175682AE2069A344005D2292 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 		175598F9206C433400DC1EB0 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				175598FA206C494000DC1EB0 /* Account.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -512,6 +515,7 @@
 				175682AD2069A335005D2292 /* LoginViewController.swift in Sources */,
 				17C513BB206C097D00337001 /* BusinessViewController.swift in Sources */,
 				175682AB20699DA3005D2292 /* MenuViewController.swift in Sources */,
+				175598FB206C494000DC1EB0 /* Account.swift in Sources */,
 				173B9EF3206B28F300CE8054 /* GuestSearchViewController.swift in Sources */,
 				175682B32069A668005D2292 /* OptionsSignupViewController.swift in Sources */,
 				175682AF2069A344005D2292 /* SignupViewController.swift in Sources */,

@@ -23,7 +23,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 configuration.clientKey = "TeamRocket"  // set to nil assuming you have not set clientKey
                 configuration.server = "https://foodforless.herokuapp.com/parse"
             })
+            
         )
+        
+        Account.registerSubclass()
+        
         return true
     }
 
