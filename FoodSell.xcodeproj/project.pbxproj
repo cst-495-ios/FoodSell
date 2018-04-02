@@ -15,6 +15,7 @@
 		175682AF2069A344005D2292 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175682AE2069A344005D2292 /* SignupViewController.swift */; };
 		175682B12069A37D005D2292 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175682B02069A37D005D2292 /* SearchViewController.swift */; };
 		175682B32069A668005D2292 /* OptionsSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175682B22069A668005D2292 /* OptionsSignupViewController.swift */; };
+		175F24B12072E6C100B73341 /* AddCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175F24B02072E6C100B73341 /* AddCardViewController.swift */; };
 		1774A4022069AF0F00DA90AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1774A4002069AF0F00DA90AD /* Main.storyboard */; };
 		17A45EF72047615A00AF4590 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A45EF62047615A00AF4590 /* AppDelegate.swift */; };
 		17A45EFE2047615A00AF4590 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17A45EFD2047615A00AF4590 /* Assets.xcassets */; };
@@ -52,6 +53,7 @@
 		175682AE2069A344005D2292 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		175682B02069A37D005D2292 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		175682B22069A668005D2292 /* OptionsSignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsSignupViewController.swift; sourceTree = "<group>"; };
+		175F24B02072E6C100B73341 /* AddCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCardViewController.swift; sourceTree = "<group>"; };
 		1774A4012069AF0F00DA90AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		17A45EF32047615A00AF4590 /* FoodSell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodSell.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17A45EF62047615A00AF4590 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 				173B9EF2206B28F300CE8054 /* GuestSearchViewController.swift */,
 				17C513B8206C096C00337001 /* CustomerViewController.swift */,
 				17C513BA206C097D00337001 /* BusinessViewController.swift */,
+				175F24B02072E6C100B73341 /* AddCardViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -516,6 +519,7 @@
 				17C513BB206C097D00337001 /* BusinessViewController.swift in Sources */,
 				175682AB20699DA3005D2292 /* MenuViewController.swift in Sources */,
 				175598FB206C494000DC1EB0 /* Account.swift in Sources */,
+				175F24B12072E6C100B73341 /* AddCardViewController.swift in Sources */,
 				173B9EF3206B28F300CE8054 /* GuestSearchViewController.swift in Sources */,
 				175682B32069A668005D2292 /* OptionsSignupViewController.swift in Sources */,
 				175682AF2069A344005D2292 /* SignupViewController.swift in Sources */,

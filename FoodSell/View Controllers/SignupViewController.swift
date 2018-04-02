@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 class SignupViewController: UIViewController {
 
@@ -37,6 +38,44 @@ class SignupViewController: UIViewController {
     
     
     @IBAction func onSignup(_ sender: Any) {
+        
+        let email = emailTextField.text
+        let username = usernameTextField.text
+        let password = passwordTextField.text
+        
+        var user = PFUser()
+        user.email = email
+        user.username = username
+        user.password = password
+        
+        user.signUpInBackground(block: { (success, error) -> Void in
+        if let error = error{
+            print(error.localizedDescription)
+        }
+        else
+        {
+            var account = Account()
+            account.key = username!
+            account.type = self.selection
+            account.billing_info = [:]
+            account.cards = [[:]]
+            
+            account.saveInBackground(block: {(success, error) -> Void in
+                if let error = error{
+                    print(error.localizedDescription)
+                }
+                else
+                {
+                    print("Account saved!")
+                }
+            })
+            
+            
+            
+        }
+            
+        })
+        
     }
     
 }
