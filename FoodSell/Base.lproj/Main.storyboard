@@ -110,6 +110,9 @@
                                 <state key="normal" title="Signup">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="onSignup:" destination="GIo-9L-aJe" eventType="touchUpInside" id="DoJ-cv-T5q"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Username" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4PL-08-Mdd">
                                 <rect key="frame" x="16" y="209" width="343" height="30"/>
@@ -144,6 +147,11 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="emailTextField" destination="MSH-yN-zqy" id="FaP-vV-ElJ"/>
+                        <outlet property="passwordTextField" destination="hKJ-aY-G92" id="Lpd-Xp-rEc"/>
+                        <outlet property="usernameTextField" destination="4PL-08-Mdd" id="eYu-ZR-af2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ToS-Kk-lH3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -164,8 +172,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="onContinue:" destination="jBW-as-JLW" eventType="touchUpInside" id="Xx9-Eu-gct"/>
-                                    <segue destination="zBY-j7-mxI" kind="show" identifier="continueSignup" id="ynm-QS-4c2"/>
+                                    <segue destination="GIo-9L-aJe" kind="show" identifier="onContinue" id="lgL-2A-CKn"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8ip-zs-7m7">
@@ -244,13 +251,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Username/Email" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qtc-ih-4pD">
+                            <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="254" verticalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Username/Email" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qtc-ih-4pD">
                                 <rect key="frame" x="16" y="131" width="343" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5xt-9k-V1R">
+                            <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="253" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5xt-9k-V1R">
                                 <rect key="frame" x="16" y="239" width="343" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -382,7 +389,7 @@
         <image name="add_button" width="50" height="50"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ynm-QS-4c2"/>
         <segue reference="Q5T-Bx-wvz"/>
+        <segue reference="lgL-2A-CKn"/>
     </inferredMetricsTieBreakers>
 </document>

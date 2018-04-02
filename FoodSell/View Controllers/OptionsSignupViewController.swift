@@ -12,7 +12,7 @@ import DLRadioButton
 
 class OptionsSignupViewController: UIViewController {
 
-    
+    var selection: Int!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,14 +31,29 @@ class OptionsSignupViewController: UIViewController {
         self.performSegue(withIdentifier: "goToMenu", sender: nil)
     }
     
-    @IBAction func onContinue(_ sender: Any) {
+   
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "onContinue"{
+            if(selection == nil)
+            {
+                
+            }
+            else
+            {
+                if let destination = segue.destination as? SignupViewController{
+                    destination.selection = selection
+                }
+            }
+        }
     }
     
     @IBAction func businessSelected(_ sender: Any) {
-        
+        selection = 0
     }
     
     @IBAction func customerSelected(_ sender: Any) {
+        selection = 1
     }
     
 }
