@@ -15,6 +15,7 @@ class Account: PFObject, PFSubclassing{
     @NSManaged var cards: [[String:Any]]
     @NSManaged var billing_info: [String:Any]
     
+    
     static func parseClassName()->String{
         return "Account"
     }
