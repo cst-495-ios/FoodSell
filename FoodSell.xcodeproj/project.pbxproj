@@ -23,6 +23,7 @@
 		17A45F172047615A00AF4590 /* FoodSellUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A45F162047615A00AF4590 /* FoodSellUITests.swift */; };
 		17C513B9206C096C00337001 /* CustomerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C513B8206C096C00337001 /* CustomerViewController.swift */; };
 		17C513BB206C097D00337001 /* BusinessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C513BA206C097D00337001 /* BusinessViewController.swift */; };
+		4A654CEB2072E880004E08FD /* RestaurantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A654CEA2072E880004E08FD /* RestaurantCell.swift */; };
 		59A61B0D43856AC370D36DCE /* Pods_FoodSellTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEC72A5D13BDC8F8A46C1CCF /* Pods_FoodSellTests.framework */; };
 		AED853553E846A685DE6D388 /* Pods_FoodSellUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB823D194B35EEEF0356564F /* Pods_FoodSellUITests.framework */; };
 /* End PBXBuildFile section */
@@ -67,6 +68,7 @@
 		17C513B8206C096C00337001 /* CustomerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerViewController.swift; sourceTree = "<group>"; };
 		17C513BA206C097D00337001 /* BusinessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessViewController.swift; sourceTree = "<group>"; };
 		1FBD71CCB991DEC7DFC77BA6 /* Pods-FoodSell.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodSell.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FoodSell/Pods-FoodSell.debug.xcconfig"; sourceTree = "<group>"; };
+		4A654CEA2072E880004E08FD /* RestaurantCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantCell.swift; sourceTree = "<group>"; };
 		4C3B71A472A29FA562FAD7F0 /* Pods-FoodSellUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodSellUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FoodSellUITests/Pods-FoodSellUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		59FE0B638167A293E2F54EF3 /* Pods-FoodSellTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodSellTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FoodSellTests/Pods-FoodSellTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5AF68E8E4C620C34D32756F3 /* Pods-FoodSellUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodSellUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FoodSellUITests/Pods-FoodSellUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -105,17 +107,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		175598F8206C432D00DC1EB0 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
 		175598F9206C433400DC1EB0 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				175598FA206C494000DC1EB0 /* Account.swift */,
+				4A654CEA2072E880004E08FD /* RestaurantCell.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -161,7 +157,6 @@
 			isa = PBXGroup;
 			children = (
 				175598F9206C433400DC1EB0 /* Models */,
-				175598F8206C432D00DC1EB0 /* Views */,
 				1774A4002069AF0F00DA90AD /* Main.storyboard */,
 				175682A920699D86005D2292 /* View Controllers */,
 				17A45EF62047615A00AF4590 /* AppDelegate.swift */,
@@ -518,6 +513,7 @@
 				175598FB206C494000DC1EB0 /* Account.swift in Sources */,
 				173B9EF3206B28F300CE8054 /* GuestSearchViewController.swift in Sources */,
 				175682B32069A668005D2292 /* OptionsSignupViewController.swift in Sources */,
+				4A654CEB2072E880004E08FD /* RestaurantCell.swift in Sources */,
 				175682AF2069A344005D2292 /* SignupViewController.swift in Sources */,
 				17A45EF72047615A00AF4590 /* AppDelegate.swift in Sources */,
 			);
