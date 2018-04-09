@@ -31,7 +31,6 @@ class GuestSearchViewController: UIViewController, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "restaurantCell", for: indexPath) as! RestaurantCell
         let business = businesses[indexPath.row]
         
-        
         //        let movie = movies[indexPath.row]
         //        let title = movie["title"] as! String
         //        let overview = movie["overview"] as! String
