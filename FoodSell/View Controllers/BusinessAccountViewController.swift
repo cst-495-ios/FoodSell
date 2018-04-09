@@ -31,7 +31,8 @@ class BusinessAccountViewController: UIViewController, UITableViewDelegate, UITa
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        let cell = tableView.cellForRow(at: indexPath) as! BusinessAccountCell
+        return cell
     }
     
     
