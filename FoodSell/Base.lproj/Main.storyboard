@@ -21,6 +21,10 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7u2-Zh-94u">
                                 <rect key="frame" x="16" y="307" width="343" height="30"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="0kd-mF-cCT"/>
+                                    <constraint firstAttribute="height" constant="30" id="Bcm-zV-gy0"/>
+                                </constraints>
                                 <state key="normal" title="Login">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -32,6 +36,10 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wyi-81-ObN">
                                 <rect key="frame" x="16" y="398" width="343" height="30"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="AU6-JN-kFC"/>
+                                    <constraint firstAttribute="width" constant="343" id="MsN-qB-r4l"/>
+                                </constraints>
                                 <state key="normal" title="Signup">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -50,8 +58,8 @@
                                     <outletCollection property="gestureRecognizers" destination="xwZ-bT-Bb8" appends="YES" id="twf-x2-Mc3"/>
                                 </connections>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2RU-gH-Saf">
-                                <rect key="frame" x="16" y="32" width="343" height="225"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="applogo" translatesAutoresizingMaskIntoConstraints="NO" id="2RU-gH-Saf">
+                                <rect key="frame" x="16" y="76" width="343" height="181"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.96862300830000003" green="1" blue="0.2965085831" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -337,8 +345,12 @@
                                 </connections>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bQY-jS-AtQ">
-                                <rect key="frame" x="117" y="391" width="141" height="74"/>
+                                <rect key="frame" x="117" y="429" width="141" height="36"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="5Qo-3V-sFr"/>
+                                    <constraint firstAttribute="width" constant="141" id="VVv-Fb-vjW"/>
+                                </constraints>
                                 <state key="normal" title="Login">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -357,7 +369,7 @@
                             <constraint firstItem="bQY-jS-AtQ" firstAttribute="leading" secondItem="h3o-0Z-5ok" secondAttribute="leading" constant="117" id="Sd2-Ip-81c"/>
                             <constraint firstItem="5xt-9k-V1R" firstAttribute="top" secondItem="Qtc-ih-4pD" secondAttribute="bottom" constant="78" id="URn-zF-KRb"/>
                             <constraint firstItem="h3o-0Z-5ok" firstAttribute="trailing" secondItem="Qtc-ih-4pD" secondAttribute="trailing" constant="16" id="gDe-VY-LNL"/>
-                            <constraint firstItem="bQY-jS-AtQ" firstAttribute="top" secondItem="Whg-db-knT" secondAttribute="bottom" constant="91" id="kFe-Yj-Eam"/>
+                            <constraint firstItem="bQY-jS-AtQ" firstAttribute="top" secondItem="Whg-db-knT" secondAttribute="bottom" constant="129" id="kFe-Yj-Eam"/>
                             <constraint firstItem="h3o-0Z-5ok" firstAttribute="bottom" secondItem="bQY-jS-AtQ" secondAttribute="bottom" constant="202" id="qZc-9d-zPG"/>
                             <constraint firstItem="Whg-db-knT" firstAttribute="top" secondItem="5xt-9k-V1R" secondAttribute="bottom" constant="54" id="qbw-rZ-JFA"/>
                             <constraint firstItem="Whg-db-knT" firstAttribute="leading" secondItem="h3o-0Z-5ok" secondAttribute="leading" constant="16" id="t5i-fJ-7hW"/>
@@ -368,7 +380,7 @@
                     <connections>
                         <outlet property="loginTextField" destination="Qtc-ih-4pD" id="gdZ-yf-YXr"/>
                         <outlet property="passwordTextField" destination="5xt-9k-V1R" id="yOf-be-HRG"/>
-                        <segue destination="EJF-JG-3HD" kind="show" identifier="customerLogin" id="tQE-Wj-1dC"/>
+                        <segue destination="jRM-gR-3QO" kind="show" identifier="customerLogin" id="tQE-Wj-1dC"/>
                         <segue destination="lnq-EY-73t" kind="show" identifier="businessLogin" id="rvn-lC-MLZ"/>
                     </connections>
                 </viewController>
@@ -435,7 +447,7 @@
             </objects>
             <point key="canvasLocation" x="2701.5999999999999" y="33.733133433283363"/>
         </scene>
-        <!--Customer View Controller-->
+        <!--Profile-->
         <scene sceneID="QLJ-y5-y1X">
             <objects>
                 <viewController id="EJF-JG-3HD" customClass="CustomerViewController" customModule="FoodSell" customModuleProvider="target" sceneMemberID="viewController">
@@ -445,10 +457,11 @@
                         <color key="backgroundColor" red="0.96862300830000003" green="1" blue="0.2965085831" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="lOi-jC-ckr"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Profile" id="rLN-Og-osb"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9kZ-II-Cov" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1030" y="-799"/>
+            <point key="canvasLocation" x="1368.8" y="-799.2503748125938"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="oNQ-MP-FtF">
@@ -519,12 +532,30 @@
             </objects>
             <point key="canvasLocation" x="1876" y="34"/>
         </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="6nG-ua-agQ">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="jRM-gR-3QO" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="aNP-c0-cqG">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="EJF-JG-3HD" kind="relationship" relationship="viewControllers" id="kPu-IU-dmg"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tAg-bu-ggB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="287" y="-799"/>
+        </scene>
     </scenes>
     <resources>
         <image name="add_button" width="50" height="50"/>
+        <image name="applogo" width="181" height="181"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Q5T-Bx-wvz"/>
+        <segue reference="vr2-9l-3sz"/>
         <segue reference="lgL-2A-CKn"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		16A9D76AEFD9B432CB6A5210 /* Pods_FoodSell.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A074494B94ED07C1B14EFD1A /* Pods_FoodSell.framework */; };
+		1705771B207EAB7100ACFBE9 /* BusinessAccountCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1705771A207EAB7100ACFBE9 /* BusinessAccountCell.swift */; };
 		1736107E207C106D003F9460 /* BusinessAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1736107D207C106D003F9460 /* BusinessAccount.swift */; };
 		17361080207C1178003F9460 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1736107F207C1178003F9460 /* Menu.swift */; };
 		17361082207C1556003F9460 /* BusinessAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17361081207C1556003F9460 /* BusinessAccountViewController.swift */; };
@@ -27,7 +28,6 @@
 		17A45F172047615A00AF4590 /* FoodSellUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A45F162047615A00AF4590 /* FoodSellUITests.swift */; };
 		17C513B9206C096C00337001 /* CustomerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C513B8206C096C00337001 /* CustomerViewController.swift */; };
 		17C513BB206C097D00337001 /* BusinessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C513BA206C097D00337001 /* BusinessViewController.swift */; };
-		17DDC430207D789900C85317 /* BusinessAccountCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DDC42F207D789900C85317 /* BusinessAccountCell.swift */; };
 		4A654CEB2072E880004E08FD /* RestaurantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A654CEA2072E880004E08FD /* RestaurantCell.swift */; };
 		59A61B0D43856AC370D36DCE /* Pods_FoodSellTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEC72A5D13BDC8F8A46C1CCF /* Pods_FoodSellTests.framework */; };
 		AED853553E846A685DE6D388 /* Pods_FoodSellUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB823D194B35EEEF0356564F /* Pods_FoodSellUITests.framework */; };
@@ -51,6 +51,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1705771A207EAB7100ACFBE9 /* BusinessAccountCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessAccountCell.swift; sourceTree = "<group>"; };
 		1736107D207C106D003F9460 /* BusinessAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessAccount.swift; sourceTree = "<group>"; };
 		1736107F207C1178003F9460 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		17361081207C1556003F9460 /* BusinessAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessAccountViewController.swift; sourceTree = "<group>"; };
@@ -76,7 +77,6 @@
 		17A45F182047615A00AF4590 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		17C513B8206C096C00337001 /* CustomerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerViewController.swift; sourceTree = "<group>"; };
 		17C513BA206C097D00337001 /* BusinessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessViewController.swift; sourceTree = "<group>"; };
-		17DDC42F207D789900C85317 /* BusinessAccountCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessAccountCell.swift; sourceTree = "<group>"; };
 		1FBD71CCB991DEC7DFC77BA6 /* Pods-FoodSell.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodSell.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FoodSell/Pods-FoodSell.debug.xcconfig"; sourceTree = "<group>"; };
 		4A654CEA2072E880004E08FD /* RestaurantCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantCell.swift; sourceTree = "<group>"; };
 		4C3B71A472A29FA562FAD7F0 /* Pods-FoodSellUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodSellUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FoodSellUITests/Pods-FoodSellUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -124,7 +124,7 @@
 				4A654CEA2072E880004E08FD /* RestaurantCell.swift */,
 				1736107D207C106D003F9460 /* BusinessAccount.swift */,
 				1736107F207C1178003F9460 /* Menu.swift */,
-				17DDC42F207D789900C85317 /* BusinessAccountCell.swift */,
+				1705771A207EAB7100ACFBE9 /* BusinessAccountCell.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -533,7 +533,7 @@
 				175682B32069A668005D2292 /* OptionsSignupViewController.swift in Sources */,
 				4A654CEB2072E880004E08FD /* RestaurantCell.swift in Sources */,
 				175682AF2069A344005D2292 /* SignupViewController.swift in Sources */,
-				17DDC430207D789900C85317 /* BusinessAccountCell.swift in Sources */,
+				1705771B207EAB7100ACFBE9 /* BusinessAccountCell.swift in Sources */,
 				17361082207C1556003F9460 /* BusinessAccountViewController.swift in Sources */,
 				17A45EF72047615A00AF4590 /* AppDelegate.swift in Sources */,
 			);
