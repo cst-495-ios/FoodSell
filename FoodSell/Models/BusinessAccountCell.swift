@@ -9,7 +9,9 @@
 import UIKit
 
 class BusinessAccountCell: UITableViewCell {
-
+    
+    var business: BusinessAccount!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -21,6 +21,8 @@
 		175682B32069A668005D2292 /* OptionsSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175682B22069A668005D2292 /* OptionsSignupViewController.swift */; };
 		175F24B12072E6C100B73341 /* AddCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175F24B02072E6C100B73341 /* AddCardViewController.swift */; };
 		1774A4022069AF0F00DA90AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1774A4002069AF0F00DA90AD /* Main.storyboard */; };
+		178F6332207EBD4B00EC8CBB /* AddBusinessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178F6331207EBD4B00EC8CBB /* AddBusinessViewController.swift */; };
+		178F6334207EC4E400EC8CBB /* AddHoursViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178F6333207EC4E400EC8CBB /* AddHoursViewController.swift */; };
 		17A45EF72047615A00AF4590 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A45EF62047615A00AF4590 /* AppDelegate.swift */; };
 		17A45EFE2047615A00AF4590 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17A45EFD2047615A00AF4590 /* Assets.xcassets */; };
 		17A45F012047615A00AF4590 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17A45EFF2047615A00AF4590 /* LaunchScreen.storyboard */; };
@@ -64,6 +66,8 @@
 		175682B22069A668005D2292 /* OptionsSignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsSignupViewController.swift; sourceTree = "<group>"; };
 		175F24B02072E6C100B73341 /* AddCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCardViewController.swift; sourceTree = "<group>"; };
 		1774A4012069AF0F00DA90AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		178F6331207EBD4B00EC8CBB /* AddBusinessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBusinessViewController.swift; sourceTree = "<group>"; };
+		178F6333207EC4E400EC8CBB /* AddHoursViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHoursViewController.swift; sourceTree = "<group>"; };
 		17A45EF32047615A00AF4590 /* FoodSell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodSell.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17A45EF62047615A00AF4590 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17A45EFD2047615A00AF4590 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -142,6 +146,8 @@
 				17C513BA206C097D00337001 /* BusinessViewController.swift */,
 				175F24B02072E6C100B73341 /* AddCardViewController.swift */,
 				17361081207C1556003F9460 /* BusinessAccountViewController.swift */,
+				178F6331207EBD4B00EC8CBB /* AddBusinessViewController.swift */,
+				178F6333207EC4E400EC8CBB /* AddHoursViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -422,12 +428,14 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-FoodSell/Pods-FoodSell-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
 				"${BUILT_PRODUCTS_DIR}/DLRadioButton/DLRadioButton.framework",
+				"${BUILT_PRODUCTS_DIR}/DropDown/DropDown.framework",
 				"${BUILT_PRODUCTS_DIR}/Parse/Parse.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DLRadioButton.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DropDown.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Parse.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -532,6 +540,8 @@
 				17361080207C1178003F9460 /* Menu.swift in Sources */,
 				175682B32069A668005D2292 /* OptionsSignupViewController.swift in Sources */,
 				4A654CEB2072E880004E08FD /* RestaurantCell.swift in Sources */,
+				178F6334207EC4E400EC8CBB /* AddHoursViewController.swift in Sources */,
+				178F6332207EBD4B00EC8CBB /* AddBusinessViewController.swift in Sources */,
 				175682AF2069A344005D2292 /* SignupViewController.swift in Sources */,
 				1705771B207EAB7100ACFBE9 /* BusinessAccountCell.swift in Sources */,
 				17361082207C1556003F9460 /* BusinessAccountViewController.swift in Sources */,

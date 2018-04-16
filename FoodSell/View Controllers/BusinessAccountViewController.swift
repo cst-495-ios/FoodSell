@@ -33,11 +33,13 @@ class BusinessAccountViewController: UIViewController, UITableViewDelegate, UITa
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.cellForRow(at: indexPath) as! BusinessAccountCell
+        cell.business = businessAccounts[indexPath.row]
         return cell
     }
     
     
     @IBAction func addBusiness(_ sender: Any) {
+        
     }
     
     
