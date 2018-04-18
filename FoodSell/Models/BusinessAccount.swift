@@ -14,7 +14,7 @@ class BusinessAccount: PFObject, PFSubclassing{
     @NSManaged var location_info: [String:Any]
     @NSManaged var contact_info: String
     @NSManaged var category: String
-    @NSManaged var hours: [String:Any]
+    @NSManaged var hours: [String:String]
     @NSManaged var admin: String
     
     

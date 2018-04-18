@@ -12,7 +12,7 @@ class BusinessAccountViewController: UIViewController, UITableViewDelegate, UITa
 
     @IBOutlet weak var tableView: UITableView!
     
-    var businessAccounts: [BusinessAccount]!
+    var businessAccounts: [BusinessAccount] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,11 +28,11 @@ class BusinessAccountViewController: UIViewController, UITableViewDelegate, UITa
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return businessAccounts.count
+        return self.businessAccounts.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.cellForRow(at: indexPath) as! BusinessAccountCell
+        let cell = self.tableView.dequeueReusableCell(withIdentifier: "BusinessAccountCell", for: indexPath) as! BusinessAccountCell
         cell.business = businessAccounts[indexPath.row]
         return cell
     }

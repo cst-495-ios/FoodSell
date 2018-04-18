@@ -121,14 +121,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		172665762086B8C600A29AFB /* Business */ = {
+			isa = PBXGroup;
+			children = (
+				178F6333207EC4E400EC8CBB /* AddHoursViewController.swift */,
+				178F6331207EBD4B00EC8CBB /* AddBusinessViewController.swift */,
+				17361081207C1556003F9460 /* BusinessAccountViewController.swift */,
+				17C513BA206C097D00337001 /* BusinessViewController.swift */,
+			);
+			path = Business;
+			sourceTree = "<group>";
+		};
+		1726657A2086B8CE00A29AFB /* Customer */ = {
+			isa = PBXGroup;
+			children = (
+				175682B02069A37D005D2292 /* SearchViewController.swift */,
+				17C513B8206C096C00337001 /* CustomerViewController.swift */,
+			);
+			path = Customer;
+			sourceTree = "<group>";
+		};
+		1726657B2086B90000A29AFB /* Guest */ = {
+			isa = PBXGroup;
+			children = (
+				173B9EF2206B28F300CE8054 /* GuestSearchViewController.swift */,
+			);
+			path = Guest;
+			sourceTree = "<group>";
+		};
+		1726657D2086B97F00A29AFB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4A654CEA2072E880004E08FD /* RestaurantCell.swift */,
+				1705771A207EAB7100ACFBE9 /* BusinessAccountCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		175598F9206C433400DC1EB0 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				175598FA206C494000DC1EB0 /* Account.swift */,
-				4A654CEA2072E880004E08FD /* RestaurantCell.swift */,
 				1736107D207C106D003F9460 /* BusinessAccount.swift */,
 				1736107F207C1178003F9460 /* Menu.swift */,
-				1705771A207EAB7100ACFBE9 /* BusinessAccountCell.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -136,18 +171,14 @@
 		175682A920699D86005D2292 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				1726657B2086B90000A29AFB /* Guest */,
+				1726657A2086B8CE00A29AFB /* Customer */,
+				172665762086B8C600A29AFB /* Business */,
 				175682AE2069A344005D2292 /* SignupViewController.swift */,
 				175682AA20699DA3005D2292 /* MenuViewController.swift */,
 				175682AC2069A335005D2292 /* LoginViewController.swift */,
-				175682B02069A37D005D2292 /* SearchViewController.swift */,
 				175682B22069A668005D2292 /* OptionsSignupViewController.swift */,
-				173B9EF2206B28F300CE8054 /* GuestSearchViewController.swift */,
-				17C513B8206C096C00337001 /* CustomerViewController.swift */,
-				17C513BA206C097D00337001 /* BusinessViewController.swift */,
 				175F24B02072E6C100B73341 /* AddCardViewController.swift */,
-				17361081207C1556003F9460 /* BusinessAccountViewController.swift */,
-				178F6331207EBD4B00EC8CBB /* AddBusinessViewController.swift */,
-				178F6333207EC4E400EC8CBB /* AddHoursViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -177,6 +208,7 @@
 		17A45EF52047615A00AF4590 /* FoodSell */ = {
 			isa = PBXGroup;
 			children = (
+				1726657D2086B97F00A29AFB /* Views */,
 				175598F9206C433400DC1EB0 /* Models */,
 				1774A4002069AF0F00DA90AD /* Main.storyboard */,
 				175682A920699D86005D2292 /* View Controllers */,
