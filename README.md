@@ -145,6 +145,13 @@ One of the technical concerns we have is the database. We may face issues with h
 	
 	
 	
+## Milestones
 
+**Sprint 1*
 
+![](https://i.imgur.com/7aNZVUB.gif)
+
+**Sprint 2*
+
+![](https://i.imgur.com/OT5TJtX.gif)
 	

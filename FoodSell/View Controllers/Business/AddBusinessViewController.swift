@@ -37,7 +37,7 @@ class AddBusinessViewController: UIViewController {
     
     let states = ["AL","AK","AZ","AR","CA","CO","CT","DE","DC","FL","GA","HI","ID","IL","IN","IA","KS","KY","LA","ME","MD","MA","MI","MN","MS","MO","MT","NE","NV","NH","NJ","NM","NY","NC","ND","OH","OK","OR","PA","RI","SC","SD","TN","TX","UT","VT","VA","WA","WV","WI","WY"]
     
-    let categories = ["Asian","American","European","Casual","African","Middle Eastern"]
+    let categories = ["Casual Dining", "Fast Food", "Ethnic Food", "Fine Dining", "Cafe"]
     var stateDropDown: DropDown!
     
     var categoryDropDown: DropDown!
@@ -88,7 +88,7 @@ class AddBusinessViewController: UIViewController {
         let stateText = self.selectedState ?? "AL"
         let zipText = self.zip.text
         let phoneNumberText = self.phoneNumber.text
-        let categoryText = self.selectedCategory ?? "Asian"
+        let categoryText = self.selectedCategory ?? "Ethnic Food"
         let location_info = ["street_address":addressText,"city":cityText, "state":stateText, "zip": zipText]
         
         
@@ -108,10 +108,28 @@ class AddBusinessViewController: UIViewController {
             else
             {
                 print("Business Account added!")
-                self.performSegue(withIdentifier: "businessAdded", sender: nil)
-                
             }
+            
+            var menu = PFObject(className: "Menu")
+            
+            menu["business"] = businessNameText
+            menu["items"] = [["name": "","cost":0,"description":""]]
+            
+            menu.saveInBackground { (success, error) in
+                if let error = error{
+                    print(error.localizedDescription)
+                }
+                else
+                {
+                    print("Menu initialized")
+                    self.performSegue(withIdentifier: "businessAdded", sender: nil)
+                    
+                }
+            }
+            
         }
+        
+        
         
        
     }

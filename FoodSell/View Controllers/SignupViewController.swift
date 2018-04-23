@@ -37,7 +37,7 @@ class SignupViewController: UIViewController {
     }
     
     
-    @IBAction func onSignup(_ sender: Any) {
+    @IBAction func signup(_ sender: Any) {
         
         let email = emailTextField.text
         let username = usernameTextField.text
@@ -67,6 +67,7 @@ class SignupViewController: UIViewController {
                 else
                 {
                     print("Account saved!")
+                    self.performSegue(withIdentifier: "returnToMain", sender: nil)
                 }
             })
             

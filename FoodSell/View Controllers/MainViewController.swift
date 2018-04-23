@@ -1,14 +1,14 @@
 //
-//  MenuViewController.swift
+//  MainViewController.swift
 //  FoodSell
 //
-//  Created by user132893 on 3/26/18.
+//  Created by user132893 on 4/19/18.
 //  Copyright © 2018 user132893. All rights reserved.
 //
 
 import UIKit
 
-class MenuViewController: UIViewController {
+class MainViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,7 +21,10 @@ class MenuViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
+    }
+    
     @IBAction func login(_ sender: Any) {
         self.performSegue(withIdentifier: "login", sender: nil)
     }
@@ -30,7 +33,7 @@ class MenuViewController: UIViewController {
         self.performSegue(withIdentifier: "signup", sender: nil)
     }
     
-    @IBAction func guestLogin(_ sender: Any) {
+    @IBAction func searchAsGuest(_ sender: Any) {
         self.performSegue(withIdentifier: "searchAsGuest", sender: nil)
     }
 }

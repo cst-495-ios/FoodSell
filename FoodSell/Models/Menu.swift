@@ -9,6 +9,9 @@
 import Parse
 
 class Menu: PFObject, PFSubclassing{
+    @NSManaged var business: String!
+    @NSManaged var items: [[String: Any]]
+    
     
     static func parseClassName()->String{
         return "Menu"

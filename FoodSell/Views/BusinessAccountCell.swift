@@ -10,11 +10,25 @@ import UIKit
 
 class BusinessAccountCell: UITableViewCell {
     
-    var business: BusinessAccount!
+    @IBOutlet weak var nameLabel: UILabel!
+    
+    @IBOutlet weak var locationLabel: UILabel!
+    
+    var business: BusinessAccount! {
+        didSet{
+            nameLabel.text = business.name
+            
+            let location = "Address: \(business.location_info["street_address"] ?? ""), \(business.location_info["city"] ?? ""), \(business.location_info["state"] ?? "") \(business.location_info["zip"] ?? "")"
+            
+            locationLabel.text = location
+            
+        }
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

@@ -7,16 +7,45 @@
 //
 
 import UIKit
+import Parse
 
-class GuestSearchViewController: UIViewController, UITableViewDataSource {
+class GuestSearchViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    var businesses: [[String: Any]] = []
-    var refreshControl: UIRefreshControl!
+    var businesses: [BusinessAccount] = []
+    var filteredBusinesses: [BusinessAccount]!
+    var searchController: UISearchController!
+   
+    
+    @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        self.searchController = UISearchController(searchResultsController: nil)
+        self.searchController.searchResultsUpdater = self
+        self.searchController.obscuresBackgroundDuringPresentation = false
+        self.searchController.searchBar.placeholder = "Search Businesses"
+        navigationItem.searchController = searchController
+        navigationItem.hidesSearchBarWhenScrolling = false
+        
+        
+        
+        fetchAll()
+        
+        self.tableView.rowHeight = 300
+        
+        self.tableView.delegate = self
+        self.tableView.dataSource = self
+        
         // Do any additional setup after loading the view.
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        definesPresentationContext = true
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -25,27 +54,80 @@ class GuestSearchViewController: UIViewController, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return businesses.count
-    }
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "restaurantCell", for: indexPath) as! RestaurantCell
-        let business = businesses[indexPath.row]
         
-        //        let movie = movies[indexPath.row]
-        //        let title = movie["title"] as! String
-        //        let overview = movie["overview"] as! String
-        //
-        //        cell.titleLabel.text = title
-        //        cell.overviewLabel.text = overview
-        //
-        //        let posterPathString = movie["poster_path"] as! String
-        //        let baseURLString = "https://image.tmdb.org/t/p/w500"
-        //        let posterURL = URL(string: baseURLString + posterPathString)!
-        //        cell.posterImageView.af_setImage(withURL: posterURL)
+        if isFiltering(){
+            return filteredBusinesses.count
+        }
+        return self.businesses.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = self.tableView.dequeueReusableCell(withIdentifier: "BusinessCell", for: indexPath) as! BusinessCell
+        
+        if isFiltering(){
+            cell.business = filteredBusinesses[indexPath.row]
+        }
+        else
+        {
+            cell.business = businesses[indexPath.row]
+            
+        }
         
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let indexPath = self.tableView.indexPathForSelectedRow
+        let currentCell = self.tableView.cellForRow(at: indexPath!) as! BusinessCell
+        
+        
+        let currentBusiness = currentCell.business
+        
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "GuestSearchBusinessDetail") as! GuestBusinessDetailViewController
+        vc.business = currentBusiness
+        navigationController?.pushViewController(vc, animated: true)
+        
+    }
+    
+    
+  
 
     
+    
+    func fetchAll(){
+        var query = PFQuery(className: "BusinessAccount")
+        query.findObjectsInBackground { (objects: [PFObject]?, error) in
+            if let error = error{
+                print(error.localizedDescription)
+            }
+            else{
+                self.businesses = (objects as? [BusinessAccount])!
+                self.tableView.reloadData()
+                
+            }
+        }
+    }
+    
+    func isFiltering() -> Bool{
+        return self.searchController.isActive && !searchBarIsEmpty()
+    }
+    
+    func searchBarIsEmpty() -> Bool{
+        return self.searchController.searchBar.text?.isEmpty ?? true
+    }
+    
+    func filterContentForSearchText(_ searchText: String, scope: String = "All"){
+        self.filteredBusinesses = businesses.filter({ (business: BusinessAccount) -> Bool in
+            return business.name.lowercased().contains(searchText.lowercased())
+        })
+        
+        self.tableView.reloadData()
+    }
+}
+
+extension GuestSearchViewController: UISearchResultsUpdating{
+    func updateSearchResults(for searchController: UISearchController) {
+        filterContentForSearchText(self.searchController.searchBar.text!)
+    }
 }
 

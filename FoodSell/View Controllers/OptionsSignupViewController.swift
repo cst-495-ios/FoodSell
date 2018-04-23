@@ -27,11 +27,11 @@ class OptionsSignupViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+   
     @IBAction func goBack(_ sender: Any) {
         self.performSegue(withIdentifier: "goToMenu", sender: nil)
+        
     }
-    
-   
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if segue.identifier == "onContinue"{
@@ -41,9 +41,9 @@ class OptionsSignupViewController: UIViewController {
             }
             else
             {
-                if let destination = segue.destination as? SignupViewController{
-                    destination.selection = selection
-                }
+                let nav = segue.destination as? UINavigationController
+                let vc = nav?.viewControllers.first as! SignupViewController
+                vc.selection = self.selection
             }
         }
     }
