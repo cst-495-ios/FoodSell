@@ -23,6 +23,7 @@ class MainViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.setNavigationBarHidden(true, animated: true)
+        self.hidesBottomBarWhenPushed = true
     }
     
     @IBAction func login(_ sender: Any) {

@@ -7,6 +7,7 @@ target 'FoodSell' do
 
   # Pods for FoodSell
   pod 'Parse’
+  pod ‘ParseUI’
   pod ‘DropDown’
   pod ‘DLRadioButton’
   target 'FoodSellTests' do

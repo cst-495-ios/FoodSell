@@ -15,6 +15,9 @@
 		17361082207C1556003F9460 /* BusinessAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17361081207C1556003F9460 /* BusinessAccountViewController.swift */; };
 		173B3FB120880CFB00F1415E /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173B3FB020880CFB00F1415E /* MenuViewController.swift */; };
 		173B9EF3206B28F300CE8054 /* GuestSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173B9EF2206B28F300CE8054 /* GuestSearchViewController.swift */; };
+		1744804A208E81730000A099 /* BusinessAccountDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17448049208E81730000A099 /* BusinessAccountDetailViewController.swift */; };
+		1744804D208E88160000A099 /* EditLocationInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1744804C208E88160000A099 /* EditLocationInfoViewController.swift */; };
+		1744804F208E891B0000A099 /* EditContactInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1744804E208E891B0000A099 /* EditContactInfoViewController.swift */; };
 		175598FB206C494000DC1EB0 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175598FA206C494000DC1EB0 /* Account.swift */; };
 		175682AD2069A335005D2292 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175682AC2069A335005D2292 /* LoginViewController.swift */; };
 		175682AF2069A344005D2292 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175682AE2069A344005D2292 /* SignupViewController.swift */; };
@@ -64,6 +67,9 @@
 		17361081207C1556003F9460 /* BusinessAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessAccountViewController.swift; sourceTree = "<group>"; };
 		173B3FB020880CFB00F1415E /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		173B9EF2206B28F300CE8054 /* GuestSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestSearchViewController.swift; sourceTree = "<group>"; };
+		17448049208E81730000A099 /* BusinessAccountDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessAccountDetailViewController.swift; sourceTree = "<group>"; };
+		1744804C208E88160000A099 /* EditLocationInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditLocationInfoViewController.swift; sourceTree = "<group>"; };
+		1744804E208E891B0000A099 /* EditContactInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditContactInfoViewController.swift; sourceTree = "<group>"; };
 		175598FA206C494000DC1EB0 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		175682AC2069A335005D2292 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		175682AE2069A344005D2292 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
@@ -132,12 +138,14 @@
 		172665762086B8C600A29AFB /* Business */ = {
 			isa = PBXGroup;
 			children = (
+				1744804B208E87C70000A099 /* Update Account */,
 				178F6333207EC4E400EC8CBB /* AddHoursViewController.swift */,
 				178F6331207EBD4B00EC8CBB /* AddBusinessViewController.swift */,
 				17361081207C1556003F9460 /* BusinessAccountViewController.swift */,
 				17C513BA206C097D00337001 /* BusinessViewController.swift */,
 				173B3FB020880CFB00F1415E /* MenuViewController.swift */,
 				17F246CD20893938007B98C2 /* AddMenuItemViewController.swift */,
+				17448049208E81730000A099 /* BusinessAccountDetailViewController.swift */,
 			);
 			path = Business;
 			sourceTree = "<group>";
@@ -168,6 +176,15 @@
 				17F246CB2089388C007B98C2 /* MenuItemCell.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		1744804B208E87C70000A099 /* Update Account */ = {
+			isa = PBXGroup;
+			children = (
+				1744804C208E88160000A099 /* EditLocationInfoViewController.swift */,
+				1744804E208E891B0000A099 /* EditContactInfoViewController.swift */,
+			);
+			path = "Update Account";
 			sourceTree = "<group>";
 		};
 		175598F9206C433400DC1EB0 /* Models */ = {
@@ -474,6 +491,7 @@
 				"${BUILT_PRODUCTS_DIR}/DLRadioButton/DLRadioButton.framework",
 				"${BUILT_PRODUCTS_DIR}/DropDown/DropDown.framework",
 				"${BUILT_PRODUCTS_DIR}/Parse/Parse.framework",
+				"${BUILT_PRODUCTS_DIR}/ParseUI/ParseUI.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -481,6 +499,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DLRadioButton.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DropDown.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Parse.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ParseUI.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -580,6 +599,7 @@
 				1736107E207C106D003F9460 /* BusinessAccount.swift in Sources */,
 				175598FB206C494000DC1EB0 /* Account.swift in Sources */,
 				175F24B12072E6C100B73341 /* AddCardViewController.swift in Sources */,
+				1744804A208E81730000A099 /* BusinessAccountDetailViewController.swift in Sources */,
 				173B9EF3206B28F300CE8054 /* GuestSearchViewController.swift in Sources */,
 				17361080207C1178003F9460 /* Menu.swift in Sources */,
 				175682B32069A668005D2292 /* OptionsSignupViewController.swift in Sources */,
@@ -588,6 +608,8 @@
 				17F246CC2089388C007B98C2 /* MenuItemCell.swift in Sources */,
 				178F6332207EBD4B00EC8CBB /* AddBusinessViewController.swift in Sources */,
 				173B3FB120880CFB00F1415E /* MenuViewController.swift in Sources */,
+				1744804D208E88160000A099 /* EditLocationInfoViewController.swift in Sources */,
+				1744804F208E891B0000A099 /* EditContactInfoViewController.swift in Sources */,
 				172623E5208D385C004F1EE9 /* GuestBusinessDetailViewController.swift in Sources */,
 				175682AF2069A344005D2292 /* SignupViewController.swift in Sources */,
 				1705771B207EAB7100ACFBE9 /* BusinessAccountCell.swift in Sources */,

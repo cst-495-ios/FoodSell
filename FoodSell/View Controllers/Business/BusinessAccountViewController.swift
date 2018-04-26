@@ -82,6 +82,20 @@ class BusinessAccountViewController: UIViewController, UITableViewDelegate, UITa
     }
     
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let indexPath = self.tableView.indexPathForSelectedRow
+        let currentCell = self.tableView.cellForRow(at: indexPath!) as! BusinessAccountCell
+        
+        
+        let currentBusiness = currentCell.business
+        
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "BusinessAccountDetail") as! BusinessAccountDetailViewController
+        vc.business = currentBusiness!
+        navigationController?.pushViewController(vc, animated: true)
+        
+    }
+    
+    
     @IBAction func addBusiness(_ sender: Any) {
         if(businessAccounts.count < 1)
         {
@@ -89,6 +103,19 @@ class BusinessAccountViewController: UIViewController, UITableViewDelegate, UITa
         }
     }
     
+    @IBAction func logout(_ sender: Any) {
+        PFUser.logOutInBackground { (error) in
+            if let error = error{
+                print(error.localizedDescription)
+            }
+            else
+            {
+                print("Logged out!")
+                self.performSegue(withIdentifier: "logout", sender: nil)
+            }
+        }
+        
+    }
     
 
 }

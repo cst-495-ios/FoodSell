@@ -11,6 +11,7 @@ import Parse
 class BusinessAccount: PFObject, PFSubclassing{
     
     @NSManaged var name: String
+    @NSManaged var photo: PFFile
     @NSManaged var location_info: [String:Any]
     @NSManaged var contact_info: String
     @NSManaged var category: String
@@ -21,4 +22,7 @@ class BusinessAccount: PFObject, PFSubclassing{
     static func parseClassName()->String{
         return "BusinessAccount"
     }
+    
+    
+    
 }
