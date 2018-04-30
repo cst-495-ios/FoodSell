@@ -43,9 +43,12 @@ class GuestBusinessDetailViewController: UIViewController {
         
     }
     
-
-    @IBAction func startOrder(_ sender: Any) {
-        
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "orderStart"{
+            let nav = segue.destination as? UINavigationController
+            let vc = nav?.viewControllers.first as! OrderViewController
+            vc.business = self.business
+        }
     }
     
 }

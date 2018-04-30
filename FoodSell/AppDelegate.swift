@@ -30,6 +30,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Account.registerSubclass()
         BusinessAccount.registerSubclass()
         Menu.registerSubclass()
+        Order.registerSubclass()
         
         return true
     }

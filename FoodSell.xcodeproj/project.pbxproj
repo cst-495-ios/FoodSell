@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		16A9D76AEFD9B432CB6A5210 /* Pods_FoodSell.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A074494B94ED07C1B14EFD1A /* Pods_FoodSell.framework */; };
 		1705771B207EAB7100ACFBE9 /* BusinessAccountCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1705771A207EAB7100ACFBE9 /* BusinessAccountCell.swift */; };
+		1709B6A92097858F00866B8B /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1709B6A82097858F00866B8B /* OrderViewController.swift */; };
+		1709B6AB209788E900866B8B /* OrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1709B6AA209788E900866B8B /* OrderCell.swift */; };
 		172623E5208D385C004F1EE9 /* GuestBusinessDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172623E4208D385C004F1EE9 /* GuestBusinessDetailViewController.swift */; };
 		1736107E207C106D003F9460 /* BusinessAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1736107D207C106D003F9460 /* BusinessAccount.swift */; };
 		17361080207C1178003F9460 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1736107F207C1178003F9460 /* Menu.swift */; };
@@ -24,9 +26,12 @@
 		175682B12069A37D005D2292 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175682B02069A37D005D2292 /* SearchViewController.swift */; };
 		175682B32069A668005D2292 /* OptionsSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175682B22069A668005D2292 /* OptionsSignupViewController.swift */; };
 		175F24B12072E6C100B73341 /* AddCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175F24B02072E6C100B73341 /* AddCardViewController.swift */; };
+		177424BA2097C95E0036FCEA /* OrderConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177424B92097C95E0036FCEA /* OrderConfirmViewController.swift */; };
+		177424BC2097C9BC0036FCEA /* OrderSendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177424BB2097C9BC0036FCEA /* OrderSendViewController.swift */; };
 		1774A4022069AF0F00DA90AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1774A4002069AF0F00DA90AD /* Main.storyboard */; };
 		178F6332207EBD4B00EC8CBB /* AddBusinessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178F6331207EBD4B00EC8CBB /* AddBusinessViewController.swift */; };
 		178F6334207EC4E400EC8CBB /* AddHoursViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178F6333207EC4E400EC8CBB /* AddHoursViewController.swift */; };
+		1791E6EB2097C16000310EA7 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1791E6EA2097C16000310EA7 /* Order.swift */; };
 		17A45EF72047615A00AF4590 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A45EF62047615A00AF4590 /* AppDelegate.swift */; };
 		17A45EFE2047615A00AF4590 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17A45EFD2047615A00AF4590 /* Assets.xcassets */; };
 		17A45F012047615A00AF4590 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17A45EFF2047615A00AF4590 /* LaunchScreen.storyboard */; };
@@ -61,6 +66,8 @@
 
 /* Begin PBXFileReference section */
 		1705771A207EAB7100ACFBE9 /* BusinessAccountCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessAccountCell.swift; sourceTree = "<group>"; };
+		1709B6A82097858F00866B8B /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
+		1709B6AA209788E900866B8B /* OrderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCell.swift; sourceTree = "<group>"; };
 		172623E4208D385C004F1EE9 /* GuestBusinessDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestBusinessDetailViewController.swift; sourceTree = "<group>"; };
 		1736107D207C106D003F9460 /* BusinessAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessAccount.swift; sourceTree = "<group>"; };
 		1736107F207C1178003F9460 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
@@ -76,9 +83,12 @@
 		175682B02069A37D005D2292 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		175682B22069A668005D2292 /* OptionsSignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsSignupViewController.swift; sourceTree = "<group>"; };
 		175F24B02072E6C100B73341 /* AddCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCardViewController.swift; sourceTree = "<group>"; };
+		177424B92097C95E0036FCEA /* OrderConfirmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderConfirmViewController.swift; sourceTree = "<group>"; };
+		177424BB2097C9BC0036FCEA /* OrderSendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderSendViewController.swift; sourceTree = "<group>"; };
 		1774A4012069AF0F00DA90AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		178F6331207EBD4B00EC8CBB /* AddBusinessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBusinessViewController.swift; sourceTree = "<group>"; };
 		178F6333207EC4E400EC8CBB /* AddHoursViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHoursViewController.swift; sourceTree = "<group>"; };
+		1791E6EA2097C16000310EA7 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		17A45EF32047615A00AF4590 /* FoodSell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodSell.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17A45EF62047615A00AF4590 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17A45EFD2047615A00AF4590 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -164,6 +174,9 @@
 			children = (
 				173B9EF2206B28F300CE8054 /* GuestSearchViewController.swift */,
 				172623E4208D385C004F1EE9 /* GuestBusinessDetailViewController.swift */,
+				1709B6A82097858F00866B8B /* OrderViewController.swift */,
+				177424B92097C95E0036FCEA /* OrderConfirmViewController.swift */,
+				177424BB2097C9BC0036FCEA /* OrderSendViewController.swift */,
 			);
 			path = Guest;
 			sourceTree = "<group>";
@@ -174,6 +187,7 @@
 				4A654CEA2072E880004E08FD /* BusinessCell.swift */,
 				1705771A207EAB7100ACFBE9 /* BusinessAccountCell.swift */,
 				17F246CB2089388C007B98C2 /* MenuItemCell.swift */,
+				1709B6AA209788E900866B8B /* OrderCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -193,6 +207,7 @@
 				175598FA206C494000DC1EB0 /* Account.swift */,
 				1736107D207C106D003F9460 /* BusinessAccount.swift */,
 				1736107F207C1178003F9460 /* Menu.swift */,
+				1791E6EA2097C16000310EA7 /* Order.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -597,19 +612,24 @@
 				175682AD2069A335005D2292 /* LoginViewController.swift in Sources */,
 				17C513BB206C097D00337001 /* BusinessViewController.swift in Sources */,
 				1736107E207C106D003F9460 /* BusinessAccount.swift in Sources */,
+				1791E6EB2097C16000310EA7 /* Order.swift in Sources */,
 				175598FB206C494000DC1EB0 /* Account.swift in Sources */,
 				175F24B12072E6C100B73341 /* AddCardViewController.swift in Sources */,
 				1744804A208E81730000A099 /* BusinessAccountDetailViewController.swift in Sources */,
 				173B9EF3206B28F300CE8054 /* GuestSearchViewController.swift in Sources */,
 				17361080207C1178003F9460 /* Menu.swift in Sources */,
 				175682B32069A668005D2292 /* OptionsSignupViewController.swift in Sources */,
+				177424BC2097C9BC0036FCEA /* OrderSendViewController.swift in Sources */,
 				4A654CEB2072E880004E08FD /* BusinessCell.swift in Sources */,
+				1709B6AB209788E900866B8B /* OrderCell.swift in Sources */,
 				178F6334207EC4E400EC8CBB /* AddHoursViewController.swift in Sources */,
 				17F246CC2089388C007B98C2 /* MenuItemCell.swift in Sources */,
+				1709B6A92097858F00866B8B /* OrderViewController.swift in Sources */,
 				178F6332207EBD4B00EC8CBB /* AddBusinessViewController.swift in Sources */,
 				173B3FB120880CFB00F1415E /* MenuViewController.swift in Sources */,
 				1744804D208E88160000A099 /* EditLocationInfoViewController.swift in Sources */,
 				1744804F208E891B0000A099 /* EditContactInfoViewController.swift in Sources */,
+				177424BA2097C95E0036FCEA /* OrderConfirmViewController.swift in Sources */,
 				172623E5208D385C004F1EE9 /* GuestBusinessDetailViewController.swift in Sources */,
 				175682AF2069A344005D2292 /* SignupViewController.swift in Sources */,
 				1705771B207EAB7100ACFBE9 /* BusinessAccountCell.swift in Sources */,
